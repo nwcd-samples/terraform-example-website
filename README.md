@@ -6,6 +6,11 @@
 3. EKS: EKS for front and backend
 
 
+## 免责声明
+建议测试过程中使用此方案，生产环境使用请自行考虑评估。
+当您对方案需要进一步的沟通和反馈后，可以联系 nwcd_labs@nwcdcloud.cn 获得更进一步的支持。
+欢迎联系参与方案共建和提交方案需求, 也欢迎在 github 项目 issue 中留言反馈 bugs。
+
 ## 前提条件
 
 * 拥有一个做过ICP备案的域名，可以用二级域名
@@ -19,10 +24,6 @@ aws iam upload-server-certificate —server-certificate-name CertificateName
 --certificate-body file://public_key_certificate_file —private-key file://privatekey.pem
 --certificate-chain file://certificate_chain_file —path /cloudfront/<DistributionName>/
 ```
-
-## 代码地址
-
-https://github.com/salander0411/terraform-example-website
 
 
 ## 1.  Serverless Web Hosting
@@ -40,7 +41,7 @@ https://github.com/salander0411/terraform-example-website
 
 1.   下载代码
     ```
-    git clone https://github.com/salander0411/terraform-example-website.git
+    git clone https://github.com/nwcd-samples/terraform-example-website.git
     cd serverless
     ```
 
@@ -163,7 +164,7 @@ https://github.com/salander0411/terraform-example-website
 1. 下载代码
 
     ```
-    git clone https://github.com/salander0411/terraform-example-website.git
+    git clone https://github.com/nwcd-samples/terraform-example-website.git
     cd ec2
     ```
 
@@ -265,7 +266,7 @@ https://github.com/salander0411/terraform-example-website
 ```
 # 下载代码
 
-git clone https://github.com/salander0411/terraform-example-website.git
+git clone https://github.com/nwcd-samples/terraform-example-website.git
 cd eks
 
 # terraform
